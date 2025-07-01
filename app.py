@@ -4,6 +4,11 @@ from microservices.multiplier import multiplier_bp
 from microservices.subtractor import subtractor_bp
 from microservices.divider import divider_bp
 
+@app.route('/')
+def home():
+    return render_template('index.html')
+
+
 if __name__ == '__main__':
     app = Flask(__name__)
     app.register_blueprint(adder_bp)
