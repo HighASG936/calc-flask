@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+  namespace: calc
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-deployment
+  template:
+    metadata:
+      labels:
+        app: app-deployment
+    spec:
+      containers:
+        - name: app-deployment-container
+          image: docker.io/asguser/test1:calculator-services_v3.3
+          ports:
+            - containerPort: 8080
+         
