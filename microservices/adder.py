@@ -1,6 +1,6 @@
 from microservices import adder_bp, get_values
 
-@adder_bp.route('/adder/<string:a>/<string:b>')
+@adder_bp.route('/<string:a>/<string:b>')
 def adder(a, b):    
     values = get_values(a, b)
     if values == "ValueError":
