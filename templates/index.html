@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Calculator</title>
+
+    <style>
+        button
+        {
+            border-radius: 10px;
+            height: 40px;
+            min-width: 70px;
+            background-color: rgb(235, 163, 30);
+            font-size: large;
+        }
+
+        body
+        {
+            display: flex;
+            justify-content: center;
+            background-color: rgb(247, 248, 248);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .code
+        {
+            background-color: rgb(51, 51, 51);
+            color: lightgreen;
+            width: fit-content;
+            min-width: 35rem;
+            max-width: 80rem;
+            padding-top: 1%; 
+            padding-bottom: 1%;
+            display: flex;
+            text-indent: 1rem;   
+            font-size: medium; 
+            font-weight: bold;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;        
+        }
+
+        .logo
+        {   
+            /* padding-top: 1rem; */            
+            padding-left: 1rem;
+            padding-right: 1%;
+            margin: 0;         
+            width: 30px;
+            height: 30px;                        
+        }
+
+        .footer 
+        {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+    </style>
+        
+</head>
+<body>
+    <div>
+        <div>
+            <h1 style="display: flex; justify-content: center;">Simple Flask Calculator</h1>
+            <p>
+            Flask microservices that perform basic math operations: 
+            addition, subtraction, multiplication, and division.
+            </p>
+        </div>
+
+        <div style="gap: 1rem;">
+            <h2>Endpoints</h2>
+            
+            <h3>➕ Addition</h3>
+            <p class="code">GET /adder//</p>
+
+            
+            <h3>➖ Subtraction</h3>
+            <p class="code">GET /subtractor//</p>
+
+            <h3>✖️ Multiplication</h3>
+            <p class="code">GET /multiplier//</p>
+
+            <h3>➗ Division</h3>
+            <p class="code">GET /divider//</p>                    
+        </div>   
+
+        <div>
+            <h2>Examples</h2>
+            <p class="code">
+                curl https://calc-flask-production.up.railway.app/adder/2/5
+            </p>
+        </div>
+
+
+        <div>
+            <h3>Link to repository</h3>
+            <div style=" display: flex; flex-direction: row;">
+                <img class="logo" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1654845767617/RuHOJDaVPJ.png">
+                <a style="align-content: center;" href="https://github.com/HighASG936/calc-flask">
+                    https://github.com/HighASG936/calc-flask
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        © 2025 Simple Flask Calculator<br>
+        Aurelio Siordia González<br>
+        All rights reserved<br>
+    </footer>
+
+</body>
+</html>
