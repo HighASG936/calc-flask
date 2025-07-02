@@ -3,7 +3,7 @@ from flask import Blueprint
 from functools import reduce
 
 #Declare blueprint objects
-adder_bp = Blueprint('adder', __name__)
+adder_bp = Blueprint('adder', __name__, url_prefix='/adder')
 multiplier_bp = Blueprint('multiplier', __name__)
 subtractor_bp = Blueprint('subtractor', __name__)
 divider_bp = Blueprint('divider', __name__)
