@@ -4,7 +4,7 @@ from microservices.multiplier import multiplier_bp
 from microservices.subtractor import subtractor_bp
 from microservices.divider import divider_bp
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='statics')
 
 @app.route('/')
 def home():
